@@ -30,12 +30,12 @@ int main(int argc, char *argv[])
 
 	if ((argc!=1))
 	{
-		fprintf(stderr, "Usage: ./TCPClient \n"), argv[0];
+		fprintf(stderr, "Usage: %s \n", argv[0]);
 		exit(1);
 	}
 	
 	/*HardCoded Values*/
-	servIP = "192.168.222.131";
+	servIP = "8.8.8.8";
 	fileServPort = 5678;
 
 	/*Create a socket using TCP*/

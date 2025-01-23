@@ -26,7 +26,7 @@ void HandleTCPClient(int clntSocket)
 	/* Open file */
 	fileBuffer[bytesRcvd-1] = '\0';
 	f = fopen(fileBuffer,"r");
-	if (fopen == NULL)
+	if (f == NULL)
 		DieWithError("File doesn't exist");
 
 	n = 1;
